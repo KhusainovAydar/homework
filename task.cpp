@@ -53,7 +53,8 @@ public:
     void add(int value) {
         ++num;
         if (first == nullptr) {
-            first = last = new Node(value);
+            first = new Node(value);
+            last = new Node(value);
         } else {
             last->next = new Node(value);
             last = last->next;
